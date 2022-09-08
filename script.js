@@ -68,10 +68,29 @@ if (codigoNum % 2 === 0){
 }
 
 // Utilizando um operador lógico para unir duas operações relacionais
+//if ternário dentro do if
 
 if ((codigoNum % 2 === 0) && (codigoNum % 3 === 0)){
     console.log(`O número é divisível por 2 e por 3!`)
-    codigoNum === 30 ? console.log(`UFA ACERTEI!`) : console.log(`Não foi dessa vez :(`) //if ternário dentro do if
+    codigoNum === 30 ? console.log(`UFA ACERTEI!`) : console.log(`Não foi dessa vez :(`) 
+    switch(codigoNum){
+        case 6:
+            console.log(`Número 6!`);
+        break;
+        case 12:
+            console.log(`Número 12!`);
+        break;
+        case 18:
+            console.log(`Número 18!`);
+        break;
+        case 24:
+            console.log(`Número 24!`);
+        break;
+        case 30:
+            console.log(`Número 30!`);
+        break;
+        default:
+            console.log(`O número é maior que 30 ou menor que 6!`)}
 } else {
     console.log(`Não é divisível por 2 e por 3!`)
 }
@@ -79,25 +98,7 @@ if ((codigoNum % 2 === 0) && (codigoNum % 3 === 0)){
 
 // 3. Ainda dentro do if do exercício anterior, crie estrutura de switch case que verifique se o número é 6, 12, 18, 24 ou 30 e imprima uma mensagem diferente para cada número
 
-switch(codigoNum){
-    case 6:
-        console.log(`Número 6!`)
-    break;
-    case 12:
-        console.log(`Número 12!`)
-    break;
-    case 18:
-        console.log(`Número 18!`)
-    break;
-    case 24:
-        console.log(`Número 24!`)
-    break;
-    case 30:
-        console.log(`Número 30!`)
-    break;
-    default:
-        console.log(`O número é maior que 30 ou menor que 6!`)
-}
+
 // Caso não seja nenhum deles, imprima “o número é maior que 30 ou menor que 6”
 
 
